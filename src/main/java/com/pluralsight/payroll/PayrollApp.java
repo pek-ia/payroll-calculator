@@ -13,7 +13,7 @@ public class PayrollApp {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(paychecksFilename))) {
 
             String input = "";
-            bufferedReader.readLine();  // Skip the first line
+            bufferedReader.readLine();  // Skip the first line because it is a header
 
             // Read and write the records
             while ( (input = bufferedReader.readLine()) != null){
